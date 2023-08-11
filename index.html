@@ -8,14 +8,40 @@
   </head>
   <body>
     <form data-multi-step>
-      <div class="card" data-step="1">
+      <div class="card active" data-step="1">
         <div class="form-group">
+          <h3 class="step-title">ADRENALINE IN MY SOUL</h3>
           <label for="email">Email</label>
           <input type="email" name="email" id="email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
         </div>
+        <button type="button">Next</button>
       </div>
-      <div class="card" data-step="2"></div>
+      <div class="card" data-step="2">
+        <div class="form-group">
+          <h3 class="step-title">Address</h3>
+          <label for="city">City</label>
+          <input type="city" name="city" id="city" />
+          <label for="street">Street</label>
+          <input type="street" name="street" id="street" />
+          <label for="postcode">Postcode</label>
+          <input type="postcode" name="postcode" id="postcode" />
+        </div>
+        <button type="button">Previous</button>
+        <button type="button">Next</button>
+      </div>
       <div class="card" data-step="3">
+        <div class="form-group">
+          <h3 class="step-title">Personal Details</h3>
+          <label for="firstname">First Name</label>
+          <input type="firstname" name="firstname" id="firstname" />
+          <label for="lastname">Last Name</label>
+          <input type="lastname" name="lastname" id="lastname" />
+          <label for="phone">Phone</label>
+          <input type="phone" name="phone" id="phone" />
+        </div>
+        <button type="button">Previous</button>
         <button type="submit">ENTER IF YOU DARE</button>
       </div>
     </form>
